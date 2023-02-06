@@ -2,6 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import sys
 import timeit
+import math
 sys.setrecursionlimit(20000)
 
 def func1(arr, low, high):
@@ -10,9 +11,10 @@ def func1(arr, low, high):
         func1(arr, low, pi-1)
         func1(arr, pi + 1, high)
 def func2(array, start, end):
-    p = array[start]
-    low = start + 1
-    high = end
+    p = array[(start+end)//2]
+    del array[(start+end)//2]
+    low = start
+    high = end-1
     while True:
         while low <= high and array[high] >= p:
             high = high - 1
@@ -22,10 +24,11 @@ def func2(array, start, end):
             array[low], array[high] = array[high], array[low]
         else:
             break
-    array[start], array[high] = array[high], array[start]
-    return high
+    array.insert(high+1, p)
+    return high+1
 
 def main():
+    
     with open("Q2/ex2.json") as a:
         input = json.load(a)
     time_series = []
@@ -37,11 +40,16 @@ def main():
                         number=1)
         print('test')
         time_series.append(sum(time)/len(time))
+    x = [x for x in range(1000, 10000)]
+    y = [0.0000005*i*math.log(i, 10) for i in x]
     n = [len(arr) for arr in input]
-    plt.plot(n, time_series)
+    plt.plot(x, y, label='nlog(n)')
+    plt.plot(n, time_series, label='measured data')
     plt.xlabel('n')
     plt.ylabel('f(n)')
+    plt.legend()
     plt.show()
+    
 
 if __name__ == '__main__':
     main()
