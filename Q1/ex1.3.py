@@ -10,8 +10,5 @@ def funcMem(n):
             i = funcMem(n - 1) + funcMem(n - 2)
             memory[n] = i # store the nth fib number
         else:
-            print("-- MEMORY ACCESSED --\nValue: ", memory[n], "\nKey:", n, "\n\n")
             i = memory[n]
         return i
-print(funcMem(15))
-print("\n\nDICT FINAL", memory)
