@@ -33,8 +33,6 @@ def main():
                                 number= 1)
         recursiveTime[i] = timeRecursion
         memoTime[i] = timeMemo
-    print(recursiveTime)
-    print(memoTime)
     x = memoTime.keys()
     recursY = recursiveTime.values()
     memoY = memoTime.values()
