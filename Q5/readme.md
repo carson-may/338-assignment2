@@ -29,6 +29,16 @@ circular doubly linked list (5 pts)
 4. Yes, it is possible to do so. But since this would result in having a "last-in first-out" we would basically have a stack. I do not think it would be a good idea since some applications of queues are used due to the "first-in first-out" nature of them - removing this from them would not make them ideal for these applications anymore.
 
 ### 3.
+1.
+  1.
+  2.
+  3.
+2.
+  1.
+  2.
+  3.
+  4.
+  
 
 
 
