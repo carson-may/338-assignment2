@@ -31,11 +31,13 @@
 #### a. When is Linear Search your only option for searching your data as Binary and Interpolation might fail?
 #### b. What is a case that Linear search will outperform both Interpolation and Binary search, and Why? Is there a way to improve Binary and Interpolation Sort to resolve this issue?
 
-__a)__  This case occurs when the data given is not sorted in any meaningful way, not following any
+__a)__  
+    This case occurs when the data given is not sorted in any meaningful way, not following any
     distribution. In this case, interpolation and binary sort will not be able to predict the position
     of target values; therefore, they cannot be used.
 
-__b)__  A case where this situation may occur is in small sets of data. In these cases, binary and interpolation
+__b)__  
+    A case where this situation may occur is in small sets of data. In these cases, binary and interpolation
     search are computationally taxing, as their complexity is not necessary for such small data sets. The simplicity
     of linear search is favourable. The only way to improve the performance of interpolation and binary search in
     these cases is to reduce the number of operations done by them. In already optimized binary and interpolation search
