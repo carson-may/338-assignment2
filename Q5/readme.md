@@ -19,14 +19,14 @@ head and dequeue at tai? Do you think it is a good idea? (1 pt)
 circular doubly linked list (5 pts)
 
 ### 1.
-a) To save time and code. Since the 'head' node is already accessibly it is much easier to insert data at the head rather than traverse through the whole list to insert data at the end.
-b) Yes, to insert data at the end of a (singly) linked list we would need to traverse to the final node in the list and then link the new data.
-c) It would be longer to push and pop data from the end of a stack, since traversing the list is needed O(n). The pointer to the start of the list already exists and makes it much quicker to push and pop data from the list O(1), whereas the end of the list requires a traversal.
+1. To save time and code. Since the 'head' node is already accessibly it is much easier to insert data at the head rather than traverse through the whole list to insert data at the end.
+2. Yes, to insert data at the end of a (singly) linked list we would need to traverse to the final node in the list and then link the new data.
+3. It would be longer to push and pop data from the end of a stack, since traversing the list is needed O(n). The pointer to the start of the list already exists and makes it much quicker to push and pop data from the list O(1), whereas the end of the list requires a traversal.
 ### 2.
-a) A pointer to the end of the linked list exists so that the end of the linked list can easily be found, not requiring a traversal of the list. It is not needed, but without it the list would have to be iterated through till the end was found everytime a new item was added to the queue.
-b) Yes, but the queue will take longer to enqueue data, as a full iteration of the queue is needed to get to where new data is to be enqueued.
-c) Since operation with the tail pointer is one operation to find the end of the queue, the complexity is O(1). We would go from O(1) to traversing the queue until we find the tail item, which means n amount of iterations resulting in O(n) complexity.
-d) Yes, it is possible to do so. But since this would result in having a "last-in first-out" we would basically have a stack. I do not think it would be a good idea since some applications of queues are used due to the "first-in first-out" nature of them - removing this from them would not make them ideal for these applications anymore.
+1. A pointer to the end of the linked list exists so that the end of the linked list can easily be found, not requiring a traversal of the list. It is not needed, but without it the list would have to be iterated through till the end was found everytime a new item was added to the queue.
+2. Yes, but the queue will take longer to enqueue data, as a full iteration of the queue is needed to get to where new data is to be enqueued.
+3. Since operation with the tail pointer is one operation to find the end of the queue, the complexity is O(1). We would go from O(1) to traversing the queue until we find the tail item, which means n amount of iterations resulting in O(n) complexity.
+4. Yes, it is possible to do so. But since this would result in having a "last-in first-out" we would basically have a stack. I do not think it would be a good idea since some applications of queues are used due to the "first-in first-out" nature of them - removing this from them would not make them ideal for these applications anymore.
 
 ### 3.
 
