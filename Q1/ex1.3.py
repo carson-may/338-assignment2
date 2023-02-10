@@ -12,3 +12,5 @@ def funcMem(n):
         else:
             i = memory[n]
         return i
+
+print(funcMem(12))
