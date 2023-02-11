@@ -40,6 +40,7 @@ Time complexity is T(2^N)
 
 ### Part 6:
 ex1.3.py is in the Q1 folder
+
 ### Part 7:
 Looking at the previous computational complexity of the pure recursive function, it had O(2^n), which is due to the amount of function calls that occur.
 
@@ -47,6 +48,10 @@ Since we are using memoization there is going to be less function calls. The dat
 ### Part 8:
 
 Added ex1.5.py to repo
+
+__Plot:__
+
+[!plot](2.5.png)
 
 ### Part 9:
 
