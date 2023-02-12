@@ -1,5 +1,4 @@
-### Question 1
----------------------------
+# Question 1
 ### Questions:
 1. Explain, in general terms and your own words, what memoization is (0.5 pts)
 2. Consider the following code:

@@ -1,9 +1,8 @@
-<div align='center'>
+<div align=center>
 <h1> ENSF 338 Assignment 2 </h1>
 <h3> Carson May and Caiden Affleck <br> (30139961, 30145805) </h3>
-<<<<<<< HEAD
 
-[github repo](https://github.com/carson-may/338-assignment2.git)
+<a href="https://github.com/carson-may/338-assignment2.git">Github Repo</a>
 
 <h2> Task Distribution </h2>
 
