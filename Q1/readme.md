@@ -51,7 +51,7 @@ Added ex1.5.py to repo
 
 __Plot:__
 
-[!plot](2.5.png)
+![plot](2.5.png)
 
 ### Part 9:
 
